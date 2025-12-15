@@ -9,71 +9,75 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <footer class="footer">
-      <!-- MAIN FOOTER CONTENT -->
-      <div class="container footer-content">
-        <!-- Logo (icon + text = one link) -->
+   <footer class="footer" id="footer">
+  <div class="footer-bg">
+    <div class="container footer-cont">
+      <div class="footer-inner">
+        <!-- лого -->
         <a href="/" class="footer-logo" aria-label="На головну сторінку">
-          <!-- SVG лапки -->
           <svg
             class="footer-logo-icon"
+            viewBox="0 0 302 129.43"
             aria-hidden="true"
-            width="40"
-            height="40"
           >
-            <!-- svg content -->
+            <use href="./img/icons.svg#logo"></use>
           </svg>
-          <span class="footer-logo-text">
-            Хатинка<br />
-            Лапок
-          </span>
         </a>
-        <!-- Navigation -->
+        <!-- навігація -->
         <nav class="footer-nav" aria-label="Навігація футера">
           <ul class="footer-nav-list">
-            <li><a href="#about" class="footer-nav-link">Про нас</a></li>
-            <li><a href="#pets" class="footer-nav-link">Знайти друга</a></li>
-            <li><a href="#faq" class="footer-nav-link">Часті запитання</a></li>
-            <li>
-              <a href="#stories" class="footer-nav-link">Історії успіху</a>
+            <li class="footer-nav-item">
+              <a href="#hero" class="footer-nav-link">Про нас</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#tails" class="footer-nav-link">Знайти друга</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#quest" class="footer-nav-link">Часті питання</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#feedb" class="footer-nav-link">Історії успіху</a>
             </li>
           </ul>
         </nav>
-
-        <!-- Socials -->
+        <!-- соц.лінки -->
         <ul class="footer-socials">
           <li>
             <a
               href="https://www.facebook.com/"
+              class="footer-social-link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              class="footer-social-link"
             >
-              <!-- SVG Facebook -->
+              <svg width="32" height="32" aria-hidden="true">
+                <use href="./img/icons.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a
               href="https://www.instagram.com/"
+              class="footer-social-link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              class="footer-social-link"
             >
-              <!-- SVG Instagram -->
+              <svg width="32" height="32" aria-hidden="true">
+                <use href="./img/icons.svg#instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-
-      <!-- Divider (full width) -->
-      <div class="footer-divider"></div>
-
-      <!-- Copyright -->
-      <div class="container footer-copy-container">
-        <p class="footer-copy">© 2025 Хатинка лапок. Всі права захищені.</p>
-      </div>
-    </footer>
+    </div>
+    <!-- розділювач -->
+    <div class="footer-divider"></div>
+    <!-- авт.права -->
+    <div class="container footer-copy-cont">
+      <p class="footer-copy">© 2025 Хатинка лапок. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
